@@ -16,13 +16,6 @@
             border-radius: 0.25rem; /* Optionale leichte Rundung für die Bilder */
         }
 
-        .img-150 {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 0.25rem;
-        }
-
         /* Quadrat links neben der Überschrift */
         .heading-square {
             display: inline-block; /* Für die korrekte Positionierung neben dem Text */
@@ -50,40 +43,28 @@
             margin-right: 15px;
         }
 
-        /* Content Kästen */
-        .content-card {
+        /* Gleiche Styling für alle Kästen */
+        .content-box {
             background-color: #f0f0f0;
-            border-radius: 0.5rem;
-            padding: 20px;
-            margin-bottom: 20px;
-            transition: transform 0.2s, box-shadow 0.2s;
+            padding: 1.5rem;
+            border-radius: 0.375rem;
             height: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .content-card:hover {
+        .content-box:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
-        .content-card h4 {
-            color: #3ebd62;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        .content-card a {
+        .content-box a {
             text-decoration: none;
             color: inherit;
         }
 
-        .content-card a:hover {
+        .content-box a:hover {
             text-decoration: none;
             color: inherit;
-        }
-
-        .content-description {
-            color: #666;
-            font-size: 0.95rem;
         }
     </style>
 </head>
@@ -115,89 +96,123 @@
     </nav>
 
     <div class="container my-5">
-        <!-- Erste Reihe: Bibelportal Info und Willkommen -->
+        <!-- Erste Reihe: 3 Kästen -->
         <div class="row align-items-stretch mb-4">
-            <div class="col-md-6 mb-4">
-                <div class="p-4 rounded" style="background-color: #f0f0f0;">
+            <!-- Bibelportal.de -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="content-box">
                     <div class="row g-3">
                         <div class="col-auto">
                             <img src="./pics/aaron-burden-IbppY2kTZSE-unsplash.webp" class="img-fluid img-200" alt="Bibelportal.de">
                         </div>
                         <div class="col">
-                             <h2 style="color: #333333;">
-                        <span class="heading-square"></span>Bibelportal.de
-                    </h2>
+                            <h2 style="color: #333333;">
+                                <span class="heading-square"></span>Bibelportal.de
+                            </h2>
                             <p>Bibelportal.de gibt es seit 20 Jahren. Sie finden hier Angebote rund um die Bibel. Sie ist das Wort Gottes und es lohnt sich unbedingt, sich mehr damit zu beschäftigen.</p>
-                            <p>Entdecken Sie Gottes Wort z.B. mit einem Bibelleseplan, der Ihnen dabei hilft, dranzubleiben und zu entdecken, welche Schätze in der Bibel verborgen sind und nur darauf warten, von Ihnen gehoben zu werden!</p>
+                            <p>Entdecken Sie Gottes Wort z.B. mit einem Bibelleseplan, der Ihnen dabei hilft, dranzubleiben und zu entdecken, welche Schätze in der Bibel verborgen sind!</p>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-6 mb-4">
-                <div class="p-4 rounded" style="background-color: #f0f0f0;">
+            <!-- Willkommen -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="content-box">
                     <div class="row g-3">
                         <div class="col-auto">
                             <img src="./pics/Foto-copyright-Thomas-Roser.webp" class="img-fluid img-200" alt="Thomas Roser">
                         </div>
                         <div class="col">
                             <h2 style="color: #333333;">
-                        <span class="heading-square"></span>Willkommen
-                    </h2>
-                            <p>Hallo, ich bin Thomas Roser und lebe in Nürnberg. Seit über 20 Jahren, genauer gesagt seit 2003, ist Bibelportal.de mein privates Projekt. Die Bibel fasziniert mich als Lieblingsbuch immer wieder aufs Neue, und diese Leidenschaft teile ich gerne. Durch hilfreiche Informationen, Erklärungen und Ressourcen möchte ich anderen Menschen den Zugang zu Gottes Wort erleichtern und sie ermutigen, selbst zu entdecken, welche Freude und Kraft die Bibel schenken kann.</p>
+                                <span class="heading-square"></span>Willkommen
+                            </h2>
+                            <p>Hallo, ich bin Thomas Roser und lebe in Nürnberg. Seit über 20 Jahren, genauer gesagt seit 2003, ist Bibelportal.de mein privates Projekt. Die Bibel fasziniert mich als Lieblingsbuch immer wieder aufs Neue, und diese Leidenschaft teile ich gerne.</p>
                             <p>Sie erreichen mich über die Adresse thomas /punkt/ roser /at/ outlook /punkt/ de</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Online-Bibeln -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="./online-bibeln.html">
+                    <div class="content-box">
+                        <div class="row g-3">
+                            <div class="col-auto">
+                                <img src="./pics/Online-Bibeln.webp" class="img-fluid img-200" alt="Online-Bibeln">
+                            </div>
+                            <div class="col">
+                                <h2 style="color: #333333;">
+                                    <span class="heading-square"></span>Online-Bibeln
+                                </h2>
+                                <p>Lesen Sie die Bibel online in verschiedenen Übersetzungen oder laden Sie Bibeln zum Offline-Lesen herunter.</p>
+                                <p>Finden Sie die für Sie passende Bibelübersetzung und entdecken Sie die Vielfalt von Gottes Wort in verschiedenen Sprachen und Ausgaben.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <!-- Zweite Reihe: Die vier Content-Kästen -->
-        <div class="row">
-            <div class="col-md-6 col-lg-3 mb-4">
-                <a href="./online-bibeln.html" class="text-decoration-none">
-                    <div class="content-card">
-                        <div class="text-center mb-3">
-                            <img src="./pics/Online-Bibeln.webp" class="img-150" alt="Online-Bibeln">
+        <!-- Zweite Reihe: 3 Kästen -->
+        <div class="row align-items-stretch">
+            <!-- Bibellesepläne -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="./bibelleseplaene.html">
+                    <div class="content-box">
+                        <div class="row g-3">
+                            <div class="col-auto">
+                                <img src="./pics/Bibelleseplaene.webp" class="img-fluid img-200" alt="Bibellesepläne">
+                            </div>
+                            <div class="col">
+                                <h2 style="color: #333333;">
+                                    <span class="heading-square"></span>Bibellesepläne
+                                </h2>
+                                <p>Entdecken Sie verschiedene Bibellesepläne, die Ihnen dabei helfen, systematisch durch die Bibel zu lesen.</p>
+                                <p>Von einjährigen Plänen bis zu thematischen Leseplänen - finden Sie den Plan, der zu Ihrem Lebensstil passt.</p>
+                            </div>
                         </div>
-                        <h4>Online-Bibeln</h4>
-                        <p class="content-description">Lesen Sie die Bibel online in verschiedenen Übersetzungen oder laden Sie Bibeln zum Offline-Lesen herunter.</p>
                     </div>
                 </a>
             </div>
 
-            <div class="col-md-6 col-lg-3 mb-4">
-                <a href="./bibelleseplaene.html" class="text-decoration-none">
-                    <div class="content-card">
-                        <div class="text-center mb-3">
-                            <img src="./pics/Bibelleseplaene.webp" class="img-150" alt="Bibellesepläne">
+            <!-- Der Reichtum Gottes -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="./der-reichtum-gottes.html">
+                    <div class="content-box">
+                        <div class="row g-3">
+                            <div class="col-auto">
+                                <img src="./pics/Thron.webp" class="img-fluid img-200" alt="Der Reichtum Gottes">
+                            </div>
+                            <div class="col">
+                                <h2 style="color: #333333;">
+                                    <span class="heading-square"></span>Der Reichtum Gottes
+                                </h2>
+                                <p>Eine sechsteilige Artikelserie über den unerschöpflichen Reichtum Gottes basierend auf dem Epheserbrief.</p>
+                                <p>Entdecken Sie die Tiefe von Gottes Gnade, Herrlichkeit und seinem unergründlichen Reichtum in Jesus Christus.</p>
+                            </div>
                         </div>
-                        <h4>Bibellesepläne</h4>
-                        <p class="content-description">Entdecken Sie verschiedene Bibellesepläne, die Ihnen dabei helfen, systematisch durch die Bibel zu lesen.</p>
                     </div>
                 </a>
             </div>
 
-            <div class="col-md-6 col-lg-3 mb-4">
-                <a href="./der-reichtum-gottes.html" class="text-decoration-none">
-                    <div class="content-card">
-                        <div class="text-center mb-3">
-                            <img src="./pics/Thron.webp" class="img-150" alt="Der Reichtum Gottes">
+            <!-- Predigten -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="./predigten.html">
+                    <div class="content-box">
+                        <div class="row g-3">
+                            <div class="col-auto">
+                                <img src="./pics/MP3-Download.webp" class="img-fluid img-200" alt="Predigten">
+                            </div>
+                            <div class="col">
+                                <h2 style="color: #333333;">
+                                    <span class="heading-square"></span>Predigten
+                                </h2>
+                                <p>Hören Sie sich Predigten zu verschiedenen biblischen Themen an und laden Sie diese als MP3-Dateien herunter.</p>
+                                <p>Von Auslegungen biblischer Bücher bis zu thematischen Predigten - lassen Sie sich durch Gottes Wort ermutigen und herausfordern.</p>
+                            </div>
                         </div>
-                        <h4>Der Reichtum Gottes</h4>
-                        <p class="content-description">Eine sechsteilige Artikelserie über den unerschöpflichen Reichtum Gottes basierend auf dem Epheserbrief.</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6 col-lg-3 mb-4">
-                <a href="./predigten.html" class="text-decoration-none">
-                    <div class="content-card">
-                        <div class="text-center mb-3">
-                            <img src="./pics/MP3-Download.webp" class="img-150" alt="Predigten">
-                        </div>
-                        <h4>Predigten</h4>
-                        <p class="content-description">Hören Sie sich Predigten zu verschiedenen biblischen Themen an und laden Sie diese als MP3-Dateien herunter.</p>
                     </div>
                 </a>
             </div>
