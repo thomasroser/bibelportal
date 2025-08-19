@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Roser</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        /* Eigene Styles */
+        .img-200 {
+            width: 240px;
+            height: 240px;
+            object-fit: cover; /* Stellt sicher, dass das Bild den Bereich ausfüllt, ohne verzerrt zu werden */
+            border-radius: 0.25rem; /* Optionale leichte Rundung für die Bilder */
+        }
+
+        /* Quadrat links neben der Überschrift */
+        .heading-square {
+            display: inline-block; /* Für die korrekte Positionierung neben dem Text */
+            background-color: #3ebd62;
+            margin-right: 10px; /* 10 Pixel Abstand zur Überschrift */
+            vertical-align: middle; /* Für die vertikale Ausrichtung mit dem Text */
+        }
+
+        /* Um die Höhe des Quadrats an die h2 anzupassen */
+        h2 .heading-square {
+            height: 1em; /* Macht das Quadrat so hoch wie die Text-Höhe der h2 */
+            width: 1em;  /* Macht das Quadrat quadratisch basierend auf der h2 Text-Höhe */
+        }
+
+        /* Anpassung für den Button */
+        .btn-custom {
+            background-color: #3ebd62 !important; /* Wichtig: !important, um Bootstrap-Standard zu überschreiben */
+            border-color: #3ebd62 !important; /* Border auch anpassen */
+            color: #fff; /* Textfarbe für den Button */
+            font-weight: bold; /* Schrift in Fettdruck */
+        }
+
+        /* Navigation Links mit 15px Abstand */
+        .nav-item {
+            margin-right: 15px;
+        }
+
+        /* Gleiche Styling für alle Kästen */
+        .content-box {
+            background-color: #f0f0f0;
+            padding: 1.5rem;
+            border-radius: 0.375rem;
+            height: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .content-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .content-text {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button-container {
+            margin-top: auto;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bibelportal.de</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                   <!--Navpunkt-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./online-bibeln.html">Online-Bibeln</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./bibelleseplaene.html">Bibellesepläne</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./predigten.html">Predigten</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- Alle 6 Kästen in einer Reihe mit responsive Anpassung -->
+        <div class="row align-items-stretch">
+            <!-- Bibelportal.de -->
+            <div class="col-xl-4 col-lg-6 col-md-12 mb-4">
+                <div class="content-box">
+                    <div class="row g-3 h-100">
+                        <div class="col-auto">
+                            <img src="./pics/aaron-burden-IbppY2kTZSE-unsplash.webp" class="img-fluid img-200" alt="Bibelportal.de">
+                        </div>
+                        <div class="col content-text">
+                            <h2 style="color: #333333;">
+                                <span class="heading-square"></span>Bibelportal.de
+                            </h2>
+                            <p>Bibelportal.de gibt es seit 20 Jahren. Sie finden hier Angebote rund um die Bibel. Sie ist das Wort Gottes und es lohnt sich unbedingt, sich mehr damit zu beschäftigen.</p>
+                            <p>Entdecken Sie Gottes Wort z.B. mit einem Bibelleseplan, der Ihnen dabei hilft, dranzubleiben und zu entdecken, welche Schätze in der Bibel verborgen sind!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Willkommen -->
+            <div class="col-xl-4 col-lg-6 col-md-12 mb-4">
+                <div class="content-box">
+                    <div class="row g-3 h-100">
+                        <div class="col-auto">
+                            <img src="./pics/Foto-copyright-Thomas-Roser.webp" class="img-fluid img-200" alt="Thomas Roser">
+                        </div>
+                        <div class="col content-text">
+                            <h2 style="color: #333333;">
+                                <span class="heading-square"></span>Willkommen
+                            </h2>
+                            <p>Hallo, ich bin Thomas Roser und lebe in Nürnberg. Bibelportal.de ist mein privates Projekt und ich habe es gestartet, weil ich Jesus Christus liebe und auf diesem Weg meinen Glauben an ihn bezeugen kann. 
+                                Die Bibel fasziniert mich als mein Lieblingsbuch immer wieder aufs Neue, und diese Leidenschaft teile ich gerne.</p>
+                            <p>Sie erreichen mich über E-Mail: <a href="mailto:bibelportal.de@icloud.com">bibelportal.de@icloud.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Online-Bibeln -->
+            <div class="col-xl-4 col-lg-6 col-md-12 mb-4">
+                <div class="content-box">
+                    <div class="row g-3 h-100">
+                        <div class="col content-text">
+                            <img src="./pics/Online-Bibeln.webp" class="img-fluid img-200" alt="Online-Bibeln">
+                            
+                        </div>
+                        <div class="col-auto">
+                            <h2 style="color: #333333;">
+                                <span class="heading-square"></span>Online-Bibeln
+                            </h2>
+                            <p>Lesen Sie die Bibel online in verschiedenen Übersetzungen oder laden Sie Bibeln zum Offline-Lesen herunter.</p>
+                            <p>Finden Sie die für Sie passende Bibelübersetzung und entdecken Sie die Vielfalt von Gottes Wort in verschiedenen Sprachen und Ausgaben.</p>
+                            <div class="button-container">
+                                <a href="./online-bibeln.html" class="btn btn-custom">Bibeln entdecken</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bibellesepläne -->
+            <div class="col-xl-4 col-lg-6 col-md-12 mb-4">
+                <div class="content-box">
+                    <div class="row g-3 h-100">
+                        <div class="col-auto">
+                            <img src="./pics/Bibelleseplaene.webp" class="img-fluid img-200" alt="Bibellesepläne">
+                        </div>
+                        <div class="col content-text">
+                            <h2 style="color: #333333;">
+                                <span class="heading-square"></span>Bibellesepläne
+                            </h2>
+                            <p>Entdecken Sie verschiedene Bibellesepläne, die Ihnen dabei helfen, systematisch durch die Bibel zu lesen.</p>
+                            <p>Von einjährigen Plänen bis zu thematischen Leseplänen - finden Sie den Plan, der zu Ihrem Lebensstil passt.</p>
+                            <div class="button-container">
+                                <a href="./bibelleseplaene.html" class="btn btn-custom">Lesepläne durchstöbern</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Der Reichtum Gottes -->
+            <div class="col-xl-4 col-lg-6 col-md-12 mb-4">
+                <div class="content-box">
+                    <div class="row g-3 h-100">
+                        <div class="col content-text">
+                            <img src="./pics/Thron.webp" class="img-fluid img-200" alt="Der Reichtum Gottes">
+                            
+                        </div>
+                        <div class="col-auto">
+                            <h2 style="color: #333333;">
+                                <span class="heading-square"></span>Der Reichtum Gottes
+                            </h2>
+                            <p>Eine sechsteilige Artikelserie über den unerschöpflichen Reichtum Gottes basierend auf dem Epheserbrief.</p>
+                            <p>Entdecken Sie die Tiefe von Gottes Gnade, Herrlichkeit und seinem unergründlichen Reichtum in Jesus Christus.</p>
+                            <div class="button-container">
+                                <a href="./der-reichtum-gottes.html" class="btn btn-custom">Artikelserie lesen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Predigten -->
+            <div class="col-xl-4 col-lg-6 col-md-12 mb-4">
+                <div class="content-box">
+                    <div class="row g-3 h-100">
+                        <div class="col content-text">
+                            <img src="./pics/MP3-Download.webp" class="img-fluid img-200" alt="Predigten">
+                            
+                        </div>
+                        <div class="col-auto">
+                            <h2 style="color: #333333;">
+                                <span class="heading-square"></span>Predigten
+                            </h2>
+                            <p>Hören Sie sich Predigten zu verschiedenen biblischen Themen an und laden Sie diese als MP3-Dateien herunter.</p>
+                            <p>Von Auslegungen biblischer Bücher bis zu thematischen Predigten - lassen Sie sich durch Gottes Wort ermutigen und herausfordern.</p>
+                            <div class="button-container">
+                                <a href="./predigten.html" class="btn btn-custom">Predigten anhören</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: 100px 0 50px 50px;">
+        <a href="./impressum.html">Impressum und Datenschutzerklärung</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+</html>
