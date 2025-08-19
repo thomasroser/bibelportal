@@ -1,0 +1,91 @@
+body { background: url("./images/bg3.jpg") repeat; }
+#canvas { border: 1px solid #aaaaaa; display: block; margin: 50px auto; }
+
+.sub {
+    background-color: rgb(228, 21, 21);
+    color: white;
+    border: none;
+    height: 36px;
+    width:105px;
+    border-radius: 2px;
+    cursor:pointer;
+    margin-right:8px;
+}
+.sub:hover {
+    opacity: 0.3;
+}
+.joi {
+    background-color: white;
+    color: white;
+    border-color:  rgb(21, 131, 228);
+    border-style: solid;
+    height: 36px;
+    border-width:1px;
+    color:rgb(0, 157, 255);
+    height:36px;
+    width:62px;
+    border-radius: 2px;
+    cursor:pointer;
+}
+.tw {
+    background-color: rgb(2, 158, 255);
+    color: white;
+    border:none;
+    height:36px;
+    width:70px;
+    border-radius: 18px;
+    font-size:15px;
+    cursor:pointer;
+    margin-left:8px;
+}
+
+.title-card h2 {background:#1db8b8}
+.upcomming-events li {background:#1db8b8}
+
+#box {
+  background: #000;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+    .top-nav .container {
+        padding-right: 0 !important;
+    }
+    .top-menu > .pull-right > li {
+        margin: 0 !important;
+    }
+}
+@media screen and (min-width: 767px) {
+    .float-right-image {
+        position: fixed;
+        right: 0;
+        width: 20%;
+        bottom: 60px;
+        z-index: 100;
+        opacity: 1;
+        display: block;
+    }
+    .float-right-image.open {
+        display: none;
+    }
+}
+.select-type-title p {
+    color: #ababab;
+}
+
+/* Markdown/Code Styles */
+pre {
+  overflow-x: auto;
+}
+pre code {
+  word-wrap: normal;
+  white-space: pre;
+}
+.table-hover > tbody > tr:hover { 
+  background-color: #8D918D;
+}
+
+/* Syntax Highlighting */
+.keyword{color:rgb(0,0,255);}
+.comment{color:rgb(0,128,0);}
+.pp{color:rgb(0,0,255);}
